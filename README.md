@@ -15,7 +15,7 @@ Test configuration:
 
 3. Algorithm configuration
 
-SNM/Sorted-Blocks-configuration:
+SNM/Sorted-Blocks configuration:
  
 „Multipass“: 
 If SNM/Sorted-Blocks should be run mutliple times with different keys/blocking-criteria, than „Mutlipass“ can be selected. The slider allows to chose the number of runs. If „Multipass“ is not selected, only one run will be done.
