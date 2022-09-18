@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DuplicateDetection.ParameterDialog">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="18" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="854" height="722"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="false"/>
+      <enabled value="true"/>
+      <visible value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="4afe2" class="javax.swing.JRadioButton" binding="snmButton">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <selected value="false"/>
+          <text value="SNM (DCS)"/>
+        </properties>
+      </component>
+      <component id="97e6b" class="javax.swing.JLabel" binding="algorithmsLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Algorithms:"/>
+        </properties>
+      </component>
+      <component id="7a7ac" class="javax.swing.JLabel" binding="measuresLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Similarity-measure:"/>
+        </properties>
+      </component>
+      <component id="d4a94" class="javax.swing.JRadioButton" binding="levenshteinButton">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <selected value="false"/>
+          <text value="Levenshtein"/>
+        </properties>
+      </component>
+      <component id="d8062" class="javax.swing.JLabel" binding="bandsLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <requestFocusEnabled value="false"/>
+          <text value="Bands b"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="451e6" class="javax.swing.JLabel" binding="hashFunctionsLabel">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="# hash-functions N"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="587ab" class="javax.swing.JLabel" binding="shinglingLabel">
+        <constraints>
+          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="k-shingling"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="db9b2" class="javax.swing.JSlider" binding="bandsSlider">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="10"/>
+          <maximum value="200"/>
+          <minimum value="1"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+          <value value="20"/>
+          <valueIsAdjusting value="false"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="dfccd" class="javax.swing.JSlider" binding="hashFunctionSlider">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <inverted value="false"/>
+          <majorTickSpacing value="30"/>
+          <maximum value="300"/>
+          <minimum value="1"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <paintTrack value="true"/>
+          <snapToTicks value="true"/>
+          <value value="200"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="3cfe2" class="javax.swing.JSlider" binding="shinglingSlider">
+        <constraints>
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="1"/>
+          <maximum value="6"/>
+          <minimum value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+          <value value="2"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="7f07b" class="javax.swing.JRadioButton" binding="multiPassButton">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Multipass"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="536e8" class="javax.swing.JSlider" binding="multipassSlider">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <majorTickSpacing value="1"/>
+          <maximum value="10"/>
+          <minimum value="2"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <requestFocusEnabled value="false"/>
+          <snapToTicks value="true"/>
+          <value value="4"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="e58f" class="javax.swing.JLabel" binding="mutlipassLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="# runs:"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="fcf7a" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+        <constraints>
+          <grid row="17" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <component id="2a324" class="javax.swing.JButton" binding="runButton">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="RUN"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="83d79" class="javax.swing.JLabel" binding="resultLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Result:"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="9246c" class="javax.swing.JLabel" binding="pathLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="TSV-file-path:"/>
+        </properties>
+      </component>
+      <component id="67d8e" class="javax.swing.JLabel" binding="gsPathLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="TSV-gold-standard-file-path:"/>
+        </properties>
+      </component>
+      <component id="55759" class="javax.swing.JButton" binding="loadDataButton">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Load"/>
+        </properties>
+      </component>
+      <component id="92b26" class="javax.swing.JButton" binding="loadGSButton">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Load"/>
+        </properties>
+      </component>
+      <component id="ce8de" class="javax.swing.JLabel" binding="loadingSuccDataLabel">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="loading successfull!"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="148b" class="javax.swing.JLabel" binding="loadingSuccGSLabel">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="loading successfull!"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="177df" class="javax.swing.JSlider" binding="thresholdSlider">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <majorTickSpacing value="5"/>
+          <maximum value="100"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+          <value value="80"/>
+        </properties>
+      </component>
+      <component id="24ed0" class="javax.swing.JLabel" binding="thresholdLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Similarity-measure threshold in %"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="dd729" class="javax.swing.JLabel" binding="ws_o_Label">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="WindowSize/Overlap:"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="71ea4" class="javax.swing.JSlider" binding="ws_o_Slider">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="10"/>
+          <maximum value="200"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+          <value value="5"/>
+          <valueIsAdjusting value="false"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="6510d" class="javax.swing.JRadioButton" binding="compareKeysButton">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Use Keys for comparison"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="44022" class="javax.swing.JButton" binding="restartButton">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Restart"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="5e9e" class="javax.swing.JLabel" binding="attributLengthsLabel">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Attribute lengths"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="79e1c" class="javax.swing.JLabel" binding="attributesLabel">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Attributes"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="23775" class="javax.swing.JTextField" binding="attributeLengthsText">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="95cb0" class="javax.swing.JList" binding="attributsJList">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <selectedIndex value="-1"/>
+          <visible value="false"/>
+          <visibleRowCount value="4"/>
+        </properties>
+      </component>
+      <component id="20ba5" class="javax.swing.JRadioButton" binding="useKeysButton">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Use Keys for signature creation"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="743b1" class="javax.swing.JRadioButton" binding="jaroButton">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Jaro"/>
+        </properties>
+      </component>
+      <component id="936cf" class="javax.swing.JRadioButton" binding="naiveButton">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Naive algo"/>
+        </properties>
+      </component>
+      <component id="46e4f" class="javax.swing.JRadioButton" binding="lshButton">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="LSH (Minhash)"/>
+        </properties>
+      </component>
+      <component id="71bd7" class="javax.swing.JRadioButton" binding="sbButton">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Sorted-Blocks"/>
+        </properties>
+      </component>
+      <component id="e725b" class="javax.swing.JRadioButton" binding="optimalSimButton">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Optimal similaritry measure"/>
+        </properties>
+      </component>
+      <component id="944ff" class="javax.swing.JRadioButton" binding="jaroWinklerButton">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Jaro-Winkler"/>
+        </properties>
+      </component>
+      <component id="86a08" class="javax.swing.JLabel" binding="phiLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="DCS-threshold in %"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="6924e" class="javax.swing.JSlider" binding="phiSlider">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="10"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+          <value value="30"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <vspacer id="b00d4">
+        <constraints>
+          <grid row="16" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <scrollpane id="dd8fd" binding="scrollpane">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusCycleRoot value="false"/>
+          <visible value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="fa2d3" class="javax.swing.JTextArea" binding="resultTextArea">
+            <constraints/>
+            <properties>
+              <visible value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="algo">
+      <member id="4afe2"/>
+      <member id="71bd7"/>
+      <member id="46e4f"/>
+      <member id="936cf"/>
+    </group>
+    <group name="measure">
+      <member id="d4a94"/>
+      <member id="743b1"/>
+      <member id="e725b"/>
+      <member id="944ff"/>
+    </group>
+  </buttonGroups>
+</form>
